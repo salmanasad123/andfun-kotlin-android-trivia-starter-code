@@ -21,7 +21,7 @@ class TitleFragment : Fragment() {
         // returns root of the layout we just inflated
 
         binding.playButton.setOnClickListener { view: View ->
-            this@TitleFragment.findNavController().navigate(R.id.action_titleFragment_to_gameFragment)
+            this@TitleFragment.findNavController().navigate(TitleFragmentDirections.actionTitleFragmentToGameFragment())
             //Navigation.findNavController(view).navigate(R.id.action_titleFragment_to_gameFragment)
         }
         // tell android that we have a menu associated with title fragment
